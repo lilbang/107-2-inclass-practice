@@ -10,6 +10,9 @@ dialogue <- c('小明說："明天不用上課。"',
 
 cat(dialogue, sep="\n")
 ```
+```{r}
+
+```
 
 ```{r}
 aLogical <- c,F,FALSE,FALSE)
@@ -82,7 +85,75 @@ class(dtObject)
 ```
 
 ```{r}
+
+```
+
+```{r}
 dtObject
+```
+```{r}
+Sys.timezone()
+```
+```{r}
+twDateTime <- ymd_hms("2019-03-18 14:04:00", tz="Asia/Taipei")
+
+twDateTime 
+```
+
+```{r}
+LisbonDateTime <- with_tz(twDateTime,tzone="Europe/Lisbon")
+
+LisbonDateTime
+```
+```{r}
+typeof(twDateTime)
+as.double(twDateTime)
+```
+```{r}
+nowdatetime <-mdy_hms("03-27-2019 15:53:27")
+
+nowdatetime
+```
+
+```{r}
+a <- c(1, 5, -3)
+b <- c(0.5, 12, 2)
+aL <- c(1L, 5L, -3L)
+bL <- c(-2L, -4L, 8L)
+```
+
+```{r}
+a+bL
+aL+bL
+```
+
+```{r}
+a^b
+a %% b
+```
+```{r}
+twDateTime <- ymd_hms("2019-03-18 14:04:00", tz="Asia/Taipei")
+
+twDateTime
+twDateTime+300
+```
+
+```{r}
+startingDate <- ymd("2000-02-17")
+```
+
+```{r}
+startingDate + years(25)
+```
+
+```{r}
+startingDate + dyears(25)
+```
+
+```{r}
+ymd("2000-02-01") -> startingDate
+ymd("2019-08-11") -> endingDate
+endingDate - startingDate
 ```
 
 
