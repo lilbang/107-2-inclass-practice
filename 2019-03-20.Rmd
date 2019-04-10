@@ -156,6 +156,35 @@ ymd("2019-08-11") -> endingDate
 endingDate - startingDate
 ```
 
+```{r}
+x <- 5
+y <- 7
+```
+```{r}
+x2 <- c(1,5,10)
+y2 <- c(-1,5,20)
+```
 
+```{r}
+x3 <- c("小明","小花")
+y3 <- c("小明","小華")
+```
+```{r}
+x3==y3
+x3!=y3
+```
+```{r}
+x3==y3
+!(x3==y3)
+```
 
+```{r}
+0/0
+```
+
+```{r}
+library(readr)
+exData2 <- read_csv("https://raw.githubusercontent.com/tpemartin/github-data/master/exData2.csv")
+currency <- exData2$幣別
+```
 
